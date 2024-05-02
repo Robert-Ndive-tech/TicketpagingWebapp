@@ -4,10 +4,14 @@ import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Nav from "./(components)/nav";
 =======
 import Nav from "./components/nav";
 >>>>>>> 62e4656... continue_changes
+=======
+import Nav from "./(components)/nav";
+>>>>>>> 6c7049b... continue_changes
 
 config.autoAddcss = false; //helps in jumping of the icon
 
@@ -26,7 +30,6 @@ export default function RootLayout({ children }) {
           <Nav />
 
           <div className="flex-grow overflow-auto bg-page text-default-text">
-            {" "}
             {children}
           </div>
         </div>

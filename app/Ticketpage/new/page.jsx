@@ -1,6 +1,7 @@
+import TicketForm from "@/app/(components)/TicketForm";
 import React from "react";
-rafec;
+
 const Ticketpage = ({ params }) => {
-  return <div> Ticketpage ${params.id} </div>;
+  return <TicketForm />;
 };
 export default Ticketpage;

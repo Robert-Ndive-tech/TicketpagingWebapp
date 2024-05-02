@@ -43,24 +43,12 @@ const pool = mysql.createConnection({
   database: "Imagestore",
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const Ticketdb = mysql.createConnection({
+  host: "127.0.0.1",
+  user: "root",
+  password: "",
+  database: "Ticketing_app",
+});
 
 /*
 const Online = mysql.createConnection({
@@ -94,6 +82,14 @@ pool.connect((err) => {
     throw err;
   }
   console.log("MySQL Connected.to db 3..");
+});
+
+Ticketdb.connect((err) => {
+  if (err) {
+    console.log("Not connected to db 5");
+    throw err;
+  }
+  console.log("MySQL Connected.to db 5..");
 });
 
 Productiondb.connect((err) => {
@@ -499,6 +495,5 @@ app.get("/download", (req, res) => {
     res.send(results);
   });
 });
-*/
+
 //DATABASE SENDING PHOTOS
-*/

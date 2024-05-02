@@ -79,3 +79,7 @@ textarea {
   padding: 10px;
 >>>>>>> b5ab483... messagingtestingstarting
 }
+
+* {
+  font-family: "Geneva", Verdana, sans-serif;
+}

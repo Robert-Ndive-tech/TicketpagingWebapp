@@ -15,6 +15,7 @@ const storesrouter = express.Router();
 const stocksrouter = express.Router();
 const customrouter = express.Router();
 const staffrouter = express.Router();
+const ticketrouter = express.Router();
 
 const app = express();
 app.use(express.json());
@@ -50,6 +51,15 @@ const Ticketdb = mysql.createConnection({
   database: "Ticketing_app",
 });
 
+ticketrouter.post("/insert/ticket", (req, res) => {
+  let sql = "INSERT INTO Ti SET ?";
+  let post = req.body;
+  let query = Ticketdb.query(sql, post, (err, result) => {
+    if (err) throw err;
+    res.send(result);
+    console.log(result);
+  });
+});
 /*
 const Online = mysql.createConnection({
   host: "bepmjmvyyqzpkqn09gkw-mysql.services.clever-cloud.com",
@@ -111,7 +121,7 @@ brandrouter.get("/hi", function (req, res, next) {
   res.json("hello world");
   res.end();
 });
-brandrouter.get("/display", (req, res) => {
+brandrouter.get("/display/brands", (req, res) => {
   let sql = "SELECT * FROM brands ";
   let query = Productiondb.query(sql, (err, results) => {
     if (err) throw err;
@@ -159,7 +169,7 @@ brandrouter.delete("/delete/:customer_id", (req, res) => {
   });
 });
 
-categrouter.get("/display", (req, res) => {
+categrouter.get("/display/category", (req, res) => {
   let sql = "SELECT * FROM categories";
   let query = Productiondb.query(sql, (err, results) => {
     if (err) throw err;

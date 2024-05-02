@@ -16,7 +16,7 @@ const Nav = () => {
 =======
           <FontAwesomeIcon icon={faHome} className="icon" />
         </Link>
-        <Link href="/TicketPage/new">
+        <Link href="http://localhost:3000/Ticketpage/new">
           <FontAwesomeIcon icon={faTicket} className="icon" />
 >>>>>>> 6c7049b... continue_changes
         </Link>

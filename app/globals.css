@@ -24,6 +24,7 @@
   p {
     @apply text-sm text-default-text;
   }
+<<<<<<< HEAD
   form {
     @apply text-sm text-default-text;
   }
@@ -35,6 +36,8 @@
   textarea {
     @apply m-1 rounded bg-slate-500 p-1;
   }
+=======
+>>>>>>> 62e4656... continue_changes
 }
 
 @layer components {
@@ -42,6 +45,10 @@
     @apply text-default-text text-xl;
   }
   .btn {
+<<<<<<< HEAD
     @apply no-underline bg-blue-600 hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-serif font-bold cursor-pointer uppercase px-4 py-2 rounded-sm transition-colors block;
+=======
+    @apply hover no-underline bg-blue hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-nav font-bold cursor-pointer uppercase px-4 py-2 rounded-nd transition-colors block;
+>>>>>>> 62e4656... continue_changes
   }
 }

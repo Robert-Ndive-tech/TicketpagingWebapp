@@ -3,7 +3,11 @@ import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+<<<<<<< HEAD
 import Nav from "./(components)/nav";
+=======
+import Nav from "./components/nav";
+>>>>>>> 62e4656... continue_changes
 
 config.autoAddcss = false; //helps in jumping of the icon
 

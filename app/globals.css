@@ -24,20 +24,6 @@
   p {
     @apply text-sm text-default-text;
   }
-<<<<<<< HEAD
-  form {
-    @apply text-sm text-default-text;
-  }
-  label {
-    @apply mt-4;
-  }
-  input,
-  select,
-  textarea {
-    @apply m-1 rounded bg-slate-500 p-1;
-  }
-=======
->>>>>>> 62e4656... continue_changes
 }
 
 form {
@@ -56,15 +42,6 @@ textarea {
   .icon {
     @apply text-default-text text-xl;
   }
-<<<<<<< HEAD
-  .btn {
-<<<<<<< HEAD
-    @apply no-underline bg-blue-600 hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-serif font-bold cursor-pointer uppercase px-4 py-2 rounded-sm transition-colors block;
-=======
-    @apply hover no-underline bg-blue hover:bg-blue-accent-hover tracking-wider w-full text-center text-nav font-nav font-bold cursor-pointer uppercase px-4 py-2 rounded-nd transition-colors block;
->>>>>>> 62e4656... continue_changes
-  }
-=======
 }
 
 .btn {
@@ -77,7 +54,6 @@ textarea {
   background-color: aqua;
   color: aliceblue;
   padding: 10px;
->>>>>>> b5ab483... messagingtestingstarting
 }
 
 * {

@@ -5,13 +5,12 @@ import ProgressBar from "./ProgressBar";
 import Statusdisplay from "./statusdisplay";
 
 const Ticketcard = () => {
+
   return (
     <div className="flex flex-col bg-card hover:bg card.hover rounded-md shadow-lg p-3 m-2">
-<<<<<<< HEAD
       <div className="flex nb-3">
-=======
       <div className="flex mb-3">
->>>>>>> 6c7049b... continue_changes
+
         <Prioritydisplay />
       </div>
       <div className="ml-auto">
@@ -20,7 +19,6 @@ const Ticketcard = () => {
       <div>
         <h4>Ticket Title</h4>
         <hr className="h-px border-0 bg-page mb-2" />
-<<<<<<< HEAD
         <p className="whitsespace-pre-wrap">this is the ticketr description</p>
         <div className="flex-grow"></div>
         <div className="flex mt-2"></div>
@@ -30,7 +28,6 @@ const Ticketcard = () => {
         </div>
         <div className="m1-aut flex items-endo">
           {" "}
-=======
         <p className="whitespace-pre-wrap">this is the ticket description</p>
         <div className="flex-grow"></div>
         <div className="flex mt-2"></div>
@@ -39,12 +36,12 @@ const Ticketcard = () => {
           <ProgressBar />
         </div>
         <div className="m1-auto flex items-end">
->>>>>>> 6c7049b... continue_changes
           <Statusdisplay />
         </div>
       </div>
     </div>
-  );
-};
+  );}
+
+
 
 export default Ticketcard;
